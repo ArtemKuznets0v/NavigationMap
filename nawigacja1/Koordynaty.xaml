@@ -1,0 +1,37 @@
+﻿<Page
+    x:Class="nawigacja1.Koordynaty"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:nawigacja1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="723">
+
+    <Grid HorizontalAlignment="Center" Width="723">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Left" Height="auto" Margin="41,12,0,0" Text="Nawigator" TextWrapping="Wrap" VerticalAlignment="Top" Width="224" FontSize="20" Grid.Row="0"/>
+        <TextBlock HorizontalAlignment="Left" Height="auto" Margin="41,39,0,0" Text="koordynaty" TextWrapping="Wrap" VerticalAlignment="Top" Width="204" FontSize="36" Grid.Row="0"/>
+        <TextBlock HorizontalAlignment="Left" Height="46" Margin="173,114,0,0" Text="GPS: moje polozenie" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="330" FontSize="36"/>
+        <Rectangle HorizontalAlignment="Left" Height="47" Margin="173,167,0,0" Grid.Row="1" Stroke="Black" VerticalAlignment="Top" Width="330" Fill="#FF56DCF6"/>
+        <TextBlock x:Name="tbGPS" HorizontalAlignment="Left" Height="46" TextAlignment="Center" Margin="173,167,0,0" Text="***" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="330" FontSize="36" Foreground="#FFEB0909" />
+        <TextBlock HorizontalAlignment="Center" Height="46" Margin="0,247,0,0" Text="Podaj adres celu:" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="330" FontSize="36"/>
+        <TextBox x:Name="txAdres" HorizontalAlignment="Left" TextAlignment="Center" Margin="130,300,0,0" Grid.Row="1" Text="" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="#663007FF" Height="52" Width="456" FontFamily="Arial Black" FontSize="24"/>
+        <Rectangle HorizontalAlignment="Center" Height="135" Margin="0,365,0,0" Grid.Row="1" Stroke="Black" VerticalAlignment="Top" Width="451" Fill="#FF56DCF6"/>
+        <TextBlock HorizontalAlignment="Center" Height="39" Margin="0,365,0,0" Text="Wyznaczone wspolrzedne geograficzne:" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="378" FontSize="20" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="46" TextAlignment="Left" Margin="173,411,0,0" Text="Dlugosc geogr.:" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="330" FontSize="26"  />
+        <TextBlock HorizontalAlignment="Left" Height="46" TextAlignment="Left" Margin="173,451,0,0" Text="Szerokosc geogr.:" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="330" FontSize="26"  />
+        <TextBlock x:Name="tbDlg" HorizontalAlignment="Left" Height="61" TextAlignment="Left" Margin="397,396,0,0" Text="dlg" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" FontSize="26"  />
+        <TextBlock x:Name="tbSzer" HorizontalAlignment="Left" Height="54" TextAlignment="Left" Margin="397,443,0,0" Text="szer" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" FontSize="26"  />
+        <AppBarButton Icon="Back" Label="mapa" Margin="19,22,0,0" Grid.Row="2"  Height="64" Width="68" Click="backMapa"/>
+        <AppBarButton Icon="Find" Label="szukaj" Margin="645,18,0,0" Grid.Row="2" Height="64" Width="68" VerticalAlignment="Center" Click="szukajBut"/>
+
+
+
+
+    </Grid>
+</Page>
